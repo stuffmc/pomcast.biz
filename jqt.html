@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        
+        <title>Pomcast.biz - iOS & Ruby</title>
+        <!-- <style type="text/css" media="screen">@import "https://github.com/senchalabs/jQTouch/raw/master/jqtouch/jqtouch.css";</style>
+        <style type="text/css" media="screen">@import "https://github.com/senchalabs/jQTouch/raw/master/themes/default/theme.css";</style>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+        <script src="https://github.com/senchalabs/jQTouch/raw/master/jqtouch/jqtouch.js" type="application/x-javascript" charset="utf-8"></script> -->
+				
+				<style type="text/css" media="screen">@import "../jQTouch/jqtouch/jqtouch.css";</style>
+        <style type="text/css" media="screen">@import "../jQTouch/themes/default/theme.css";</style>
+				<link href="styles.css" type="text/css" rel="stylesheet" />
+				<link rel="stylesheet" media="all and (max-width: 480px)" href="iphone.css" /><!-- device- -->
+				<link rel="stylesheet" media="all and (min-width: 481px)" href="desktop.css" /><!-- device- -->
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+        <script src="../jQTouch/jqtouch/jqtouch.js" type="application/x-javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+            var jQT = new $.jQTouch({
+                statusBar: 'black'
+            });
+
+            $(function(){
+								var json = $.parseJSON(	 '[["picknplay",		"Pick\'n\'Play by Pikeo",		"October 2008 to June 2009"]'
+																				+',["instantpay",		"InstantPay",								"November 2008 to June 2009"]'
+																				+',["radiopodcast", "RadioPodcast", 						"Since March 2009"]'
+																				+']'
+																			);
+								$(json).each(function(index, value) {
+									console.log(value);
+									var item = $('#jqt div ul li:first').clone();
+									var a = $(item).children();
+									a.attr("href", "#"+value[0]);
+									a.find("img").attr("src", "img/"+value[0]+"icon.png")
+									a.find("span").html(value[1]);
+									item.appendTo('#jqt div ul:first');
+									var last = $('#jqt > div:last');
+									var item = last.clone();
+									item.attr("id", value[0]);
+									item.find('h1').html(value[1]);
+									item.find('p').html(value[2]);
+									item.insertBefore(last);
+								});
+								$('#jqt div ul li:first').remove();
+								$('#jqt div:last-child').remove();
+								
+								// jQT.goTo("#picknplay");
+            });
+        </script>
+    </head>
+    <body>
+			<div id="frame"></div>
+        <div id="jqt">
+            <div id="projects">
+                <ul class="rounded">
+                	<li class="arrow">
+										<a href="#picknplay">
+											<img src="img/picknplayicon.png">
+											<span>Pick'n'Play, by Pikeo.com</span>
+										</a>
+									</li>
+                </ul>
+            </div>
+						<div>
+              <div class="toolbar">
+                  <h1>Pick'n'Play</h1>
+                  <a class="back" href="#">Home</a>
+              </div>
+							<p class="info">October 2008 to June 2009</p>
+						</div>
+        </div>
+    </body>
+</html>
