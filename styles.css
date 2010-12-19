@@ -1,8 +1,5 @@
-body {
-	background:#1b242b; margin:0px; }
-/*#jqt { background: transparent; }*/
-
-
+body 	{ background:#1b242b; margin:0px; }
 img 	{ height:40px; }
 span 	{ margin-left:5px; display:inline-table; padding-top:15px; padding-bottom:10px; }
 iframe { border-style: none; overflow:hidden; }
+/*#phone { display:none }*/

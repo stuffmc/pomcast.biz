@@ -4,11 +4,20 @@
         <meta charset="UTF-8" />
         <title>Pomcast.biz - iOS & Ruby</title>
 				<link href="styles.css" type="text/css" rel="stylesheet" />
-				<link rel="stylesheet" media="all and (min-width: 481px)" href="desktop.css" /><!-- device- -->
-				<link rel="stylesheet" media="all and (max-width: 480px)" href="iphone.css" /><!-- device- -->
+				<link rel="stylesheet" media="screen and (min-device-width: 481px)" href="desktop.css" /><!-- device- -->
+				<link rel="stylesheet" media="screen and (max-device-width: 480px)" href="iphone.css" /><!-- device- -->
+				<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(function(){
+								$('#phone').slideDown();
+							// setTimeout("$('#phone').slideDown();",500);
+            });
+        </script>
     </head>
     <body>
-			<div id="phone"></div>
-			<iframe src="jqt.html" scrollbars=none frameborder="0" border="0" cellspacing="0"></iframe>
+			<div id="phone">
+				<iframe src="jqt.html" scrollbars=none frameborder="0" border="0" cellspacing="0"></iframe>
+			</div>
     </body>
 </html>

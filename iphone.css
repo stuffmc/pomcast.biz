@@ -1,4 +1,4 @@
-#jqt { margin: 0 auto;}
-#jqt div { background:transparent;}
-#phone { display:none; }
+body { background:black url(img/pattern_156.gif) repeat; }
+#jqt { margin: 0px auto; }
 iframe { border-style: none; width:100%; height:100%; }
+#projects { background:transparent; }

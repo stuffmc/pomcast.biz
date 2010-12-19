@@ -1,9 +1,7 @@
-body {
-	background:url(http://pomcast.biz/images/universe.jpg) repeat !important;
-}
-#jqt { margin: 150px 150px auto; width:640px; }
-#jqt div { background:red;}
-
-#phone { z-index:-1; position:absolute; top:10px; background: url(img/frame.png) no-repeat; margin: 150px 150px auto; width:368px; height:716px; }
-#jqt div { width: 50%; 	}
-iframe { margin: 278px 174px auto; width:320px; height:480px; }
+body { background:black url(img/pattern_156.gif) repeat; }
+/*http://www.squidfingers.com/patterns/*/
+#jqt { width:100%; background: transparent;}
+#jqt div { background:#1b242b}
+/*#jqt { background:red; margin: 150px 150px auto; width:640px; }*/
+#phone { margin: 50px auto; z-index:-1; background: url(img/frame.png) no-repeat; width:368px; height:716px;}
+iframe { margin: 118px 24px auto; width:320px; height:480px; }
