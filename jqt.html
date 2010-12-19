@@ -22,6 +22,15 @@
             });
 
             $(function(){
+										//               $('a').click(function(e) {
+										//                   // if (confirm('This link opens in a new window.')) {
+										// console.log('clicked baby! '+$(e));
+										//                       // return true;
+										//                   // } else {
+										//                       $(this).removeClass('active');
+										//                       return false;
+										//                   // }
+										//               });
 							$.getJSON('projects.json', function(data) {
 								// console.log(data);
 						    $.each(data, function(index,value){
@@ -37,15 +46,21 @@
 									item.attr("id", value[0]);
 									item.find('h1').html(value[1]);
 									item.find('span').html(value[3]);
-									item.find("img.detail").attr("src", "img/"+value[0]+"icon.png")
+									item.find("div.detail img").attr("src", "img/"+value[0]+"icon.png")
 									item.find('p.info').html(value[2]);
 									// console.log(value[0]+value[5]);
 									item.insertBefore(last);
 
 									var last = item.find('.screenshot');
 									for(i=1; i <= value[5]; i++) {
-										console.log(i);
+										// console.log(i);
+										var lastScreenshot = $('#screenshot1');
+										itemScreenshot = lastScreenshot.clone();
+										itemScreenshot.attr("id", value[0]+i);
+										itemScreenshot.find("img").attr("src", "img/"+value[0]+i+".png");
+										itemScreenshot.insertBefore("#projects")
 										item = last.clone();
+										item.attr("href", "#"+value[0]+i);
 										item.find("img").attr("src", "img/"+value[0]+i+".png");
 										// screenshot.appendTo(value[0]);
 										item.insertBefore("#radiopodcast .info");
@@ -56,7 +71,7 @@
 								$('#projects ul li:first').remove();
 								$('#jqt div:last-child').remove();
 						  });
-							jQT.goTo("#projects");
+							// jQT.goTo("#projects");
             });
         </script>
     </head>
@@ -65,10 +80,10 @@
 				<div id="main">
 				  <div class="toolbar">
 				      <h1>Pomcast.biz</h1>
-				  </div><br>
-					<div>if there's an [iOS project] out there, Yes we can...<br><br>We worked for <a href="http://pomcast.com/2008/12/08/pickplay/">Orange</a>, <a href="http://mobya.com/instantpay">Mobya</a>, <a href="http://lagardere.com">Lagard&egrave;re</a>, <a target="_blank" href="http://regioneo.com">Regioneo</a>, <a target="_blank" href="http://sevensnap.com">SevenSnap</a>, ...<br /></div>
+				  </div>
+					<div>if there's an [iOS project] out there, Yes we can...<br><br>We worked for <a href="http://pomcast.com/2008/12/08/pickplay/">Orange</a>, <a rel="external" href="http://mobya.com/instantpay">Mobya</a>, <a href="http://lagardere.com">Lagard&egrave;re</a>, <a target="_blank" href="http://regioneo.com">Regioneo</a>, <a target="_blank" href="http://sevensnap.com">SevenSnap</a>, ...<br /></div>
 					<ul class="rounded">
-						<li class="arrow"><a target="_blank" href="http://pomcast.biz/">Check our HD reel video!</a></li>
+						<li class="arrow"><a rel="external" href="http://pomcast.biz/">Check our HD reel video!</a></li>
 						<li class="arrow"><a href="#projects">iPhone Projects</a></li>
 					</ul>
 					We also do Ruby on Rails, check out <a href="http://radiopodcast.com">RadioPodcast</a>, we did *all* :)<br><br>
@@ -90,10 +105,10 @@
 						</li>
 					</ul>
 		    </div>
-				<div id="radiopodcast1">
+				<div id="screenshot1">
 					<div class="toolbar">
 				    <h1>RadioPodcast</h1>
-				    <a class="button goback" href="#radiopodcast">Close</a>
+				    <a class="button goback" href="#picknplay">Close</a>
 					</div>
 					<img class="screenshot" src="img/radiopodcast1.png">
 				</div>
@@ -107,8 +122,8 @@
 						<img src="img/picknplayicon.png">
 						<span>Pikeo.com / Orange</span>
 					</div>
-					<a class="appstore" href="itms://itunes.apple.com/us/app/radio-podcast/id381288602?mt=8"><img src="img/app_store_badge_0708_160x52.png"></a><br><br>
-					<a class="pop screenshot" href="#radiopodcast1"><img src="img/radiopodcast1.png"></a>
+					<!-- <a class="appstore" href="itms://itunes.apple.com/us/app/radio-podcast/id381288602?mt=8" target="_blank"><img src="img/app_store_badge_0708_160x52.png"></a><br><br> -->
+					<a class="pop screenshot" href="#screenshot1"><img src="img/radiopodcast1.png"></a>
 					<p class="info">October 2008 to June 2009</p>
 				</div>
 	   </div>
