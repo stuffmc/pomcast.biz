@@ -1,62 +1,122 @@
 [
 	[
 		"picknplay",
-		"Pick'n'Play by Pikeo",
-		"October 2008 to June 2009"
+		"Pick'n'Play",
+		"October 2008 to June 2009",
+		"Pikeo.com / Orange",
+		"",
+		0
 	],
 	[
 		"instantpay",
 		"InstantPay",
-		"November 2008 to June 2009"
+		"November 2008 to June 2009",
+		"Mobya.com",
+		"",
+		0
 	],
 	[
 		"radiopodcast",
 		"RadioPodcast",
-		"Since March 2009"
+		"Since March 2009",
+		"Jadeti (Lagardère)",
+		"itms://itunes.apple.com/us/app/radio-podcast/id381288602?mt=8",
+		2
 	],
 	[
 		"regioneo",
 		"Regioneo",
-		"2010"
-	],
-	[
-		"europafm",
-		"Europa FM",
-		"2009"
-	],
-	[
-		"evropa2",
-		"Evropa 2",
-		"2009"
-	],
-	[
-		"europa2",
-		"Europa 2",
-		"2009"
-	],
-	[
-		"chili",
-		"Chili Zet",
-		"2009"
-	],
-	[
-		"radiozet",
-		"Radio Zet",
-		"2009"
-	],
-	[
-		"planeta",
-		"Planeta FM",
-		"2009"
+		"2010",
+		"Regioneo",
+		"",
+		0
 	],
 	[
 		"sevensnap",
 		"SevenSnap",
-		"Mars 2009 to July 2010"
+		"Mars 2009 to July 2010",
+		"SevenSnap GmbH",
+		"",
+		0
+	],
+	[
+		"chilli",
+		"Chilli Zet",
+		"2009",
+		"Lagardère Active Radio International",
+		"",
+		0
 	],
 	[
 		"radiodj",
 		"Radio DJ",
-		"2009"
+		"2009",
+		"Lagardère Active Radio International",
+		"",
+		0
+	],
+	[
+		"europa",
+		"Europa FM",
+		"2009",
+		"Lagardère Active Radio International",
+		"",
+		0
+	],
+	[
+		"evropa2",
+		"Evropa 2",
+		"2009",
+		"Lagardère Active Radio International",
+		"",
+		0
+	],
+	[
+		"europa2",
+		"Europa 2",
+		"2009",
+		"Lagardère Active Radio International",
+		"",
+		0
+	],
+	[
+		"radiozet",
+		"Radio Zet",
+		"2009",
+		"Lagardère Active Radio International",
+		"",
+		0
+	],
+	[
+		"planeta",
+		"Planeta FM",
+		"2009",
+		"Lagardère Active Radio International",
+		"",
+		0
+	],
+	[
+		"bonton",
+		"Bonton",
+		"2009",
+		"Lagardère Active Radio International",
+		"",
+		0
+	],
+	[
+		"radio21",
+		"Radio 21",
+		"2009",
+		"Lagardère Active Radio International",
+		"",
+		0
+	],
+	[
+		"frekvence1",
+		"Frekvence 1",
+		"2009",
+		"Lagardère Active Radio International",
+		"",
+		0
 	]
 ]

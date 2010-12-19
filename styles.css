@@ -1,5 +1,15 @@
-body 	{ background:#1b242b; margin:0px; font: small-caps bold 14pt "Lucida Grande", Lucida, Verdana, sans-serif;}
-img 	{ height:40px; }
-span 	{ margin-left:5px; display:inline-table; padding-top:15px; padding-bottom:10px; }
-iframe { border-style: none; overflow:hidden; }
-/*#phone { display:none }*/
+body 		{ background:#1b242b; margin:0px; font: small-caps bold 14pt "Lucida Grande", Lucida, Verdana, sans-serif;}
+#projects img 		{ height:40px; }
+span 		{ margin-left:5px; display:inline-table; padding-top:15px; padding-bottom:10px; }
+iframe 		{ border-style: none; overflow:hidden; }
+#jqt ul li 	{ padding: 0px 0px 0px 10px; }    
+a 			{ color: yellow; }
+#phone { display:none }
+#main { text-align:center; }
+div.detail { margin-bottom:15px; }
+div.detail img 	{ margin-left:20px; margin-top:20px; width:57px; }
+div.detail span { padding-bottom:17px; width:170px; }
+img { border: 0px; }
+a.screenshot img { width: 100px; }
+a.appstore img { margin-left:80px; }
+img.screenshot { margin:3px 18px; width:283px; }

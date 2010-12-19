@@ -1,6 +1,6 @@
-body { background:black url(img/pattern_156.gif) repeat; }
+body { background:black url(img/pattern_156.gif) repeat; overflow:hidden;}
 /*http://www.squidfingers.com/patterns/*/
-#jqt { width:100%; background: transparent;}
+#jqt { width:100%; background: transparent; overflow:auto;}
 #jqt div { background:#1b242b}
 /*#jqt { background:red; margin: 150px 150px auto; width:640px; }*/
 #phone { margin: 50px auto; z-index:-1; background: url(img/frame.png) no-repeat; width:368px; height:716px;}
