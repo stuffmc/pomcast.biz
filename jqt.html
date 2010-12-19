@@ -26,12 +26,12 @@
 								// console.log(data);
 						    $.each(data, function(index,value){
 									// console.log(value);
-									var item = $('#jqt div ul li:first').clone();
+									var item = $('#jqt div ul li:last').clone();
 									var a = $(item).children();
 									a.attr("href", "#"+value[0]);
 									a.find("img").attr("src", "img/"+value[0]+"icon.png")
 									a.find("span").html(value[1]);
-									item.appendTo('#jqt div ul:first');
+									item.appendTo('#projects ul:first');
 									var last = $('#jqt > div:last');
 									var item = last.clone();
 									item.attr("id", value[0]);
@@ -39,7 +39,7 @@
 									item.find('p').html(value[2]);
 									item.insertBefore(last);
 						    });
-								$('#jqt div ul li:first').remove();
+								$('#projects ul li:first').remove();
 								$('#jqt div:last-child').remove();
 						  });
 							// jQT.goTo("#picknplay");
@@ -47,24 +47,37 @@
         </script>
     </head>
     <body>
-       <div id="jqt">
-           <div id="projects">
-               <ul class="rounded">
-               	<li class="arrow">
-									<a href="#picknplay">
-										<img src="img/picknplayicon.png">
-										<span>Pick'n'Play, by Pikeo.com</span>
-									</a>
-								</li>
-               </ul>
-           </div>
-					<div>
-             <div class="toolbar">
-                 <h1>Pick'n'Play</h1>
-                 <a class="back" href="#">Home</a>
-             </div>
-						<p class="info">October 2008 to June 2009</p>
+			<div id="jqt">
+				<div id="main">
+					<div>We worked for Orange, Mobya, Lagardère, Regioneo, SevenSnap, ...</div>
+					<ul class="rounded">
+						<li class="arrow"><a href="http://pomcast.biz/mobile.mov">Check our HD reel video!</a></li>
+						<li class="arrow"><a href="#projects">Projects</a></li>
+					</ul>
+					Get in touch with us by emailing <a href="mailto:info@pomcast-REMOVE-THIS.biz"><img src="img/infoat.png" border="0"></a><br>
+					Oh, btw, we also speak german, french, and spanish. Ja! Oui ! ¡Si!
+				</div>
+				<div id="projects">
+				  <div class="toolbar">
+				      <h1>Projects</h1>
+				      <a class="back" href="#">Home</a>
+				  </div>
+					<ul class="rounded">
+		       	<li class="arrow">
+						<a href="#picknplay">
+							<img src="img/picknplayicon.png">
+							<span>Pick'n'Play, by Pikeo.com</span>
+						</a>
+						</li>
+					</ul>
+		    </div>
+				<div>
+					<div class="toolbar">
+				    <h1>Pick'n'Play</h1>
+				    <a class="back" href="#">Projects</a>
 					</div>
-       </div>
-    </body>
+					<p class="info">October 2008 to June 2009</p>
+				</div>
+	   </div>
+	</body>
 </html>
