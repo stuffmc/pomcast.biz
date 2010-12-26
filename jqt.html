@@ -43,26 +43,32 @@
 									item.insertBefore(last);
 
 									var last = item.find('.screenshot');
-									for(i=1; i <= value[5]; i++) {
+									for(imageNumber=1; imageNumber <= value[5]; imageNumber++) {
+										// log(value[0]+imageNumber);
 										var item = last.clone();
-										item.attr("href", "#"+value[0]+i);
-										item.find("img").attr("src", "img/"+value[0]+i+".png");
-										item.insertBefore("#radiopodcast .info");
+										item.find("img").attr("src", "img/"+value[0]+imageNumber+".png");
+										item.attr("href", "#"+value[0]+imageNumber);
+										item.insertBefore("#"+value[0]+" .info");
 
 										var lastScreenshot = $('#screenshot1');
 										itemScreenshot = lastScreenshot.clone();
-										itemScreenshot.attr("id", value[0]+i);
-										itemScreenshot.find("img").attr("src", "img/"+value[0]+i+".png");
+										itemScreenshot.attr("id", value[0]+imageNumber);
+										itemScreenshot.find("img").attr("src", "img/"+value[0]+imageNumber+".png");
 										itemScreenshot.insertBefore("#projects")
 									}
 									last.remove();
-									// item.find('.screenshot').remove();
 						    });
 								$('#projects ul li:first').remove();
 								$('#jqt div:last-child').remove();
 						  });
 							jQT.goTo("#projects");
             });
+			
+						function log(text) {
+							var logText = text+" "+new Date();
+							console.log(logText);
+							document.getElementsByTagName('body') [0].innerHTML+="<br/>"+logText;
+						}
         </script>
     </head>
     <body>
