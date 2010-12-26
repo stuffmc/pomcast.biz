@@ -27,6 +27,7 @@
 						    $.each(data, function(index,value){
 									// console.log(value);
 									var item = $('#jqt div ul li:last').clone();
+									item.find('small').html(value[5]);
 									var a = $(item).children();
 									a.attr("href", "#"+value[0]);
 									a.find("img").attr("src", "img/"+value[0]+"icon.png")
@@ -94,10 +95,11 @@
 				  </div>
 					<ul class="rounded">
 		       	<li class="arrow">
-						<a href="#picknplay">
-							<img src="img/picknplayicon.png">
-							<span>Pick'n'Play, by Pikeo.com</span>
-						</a>
+							<a href="#picknplay">
+								<img src="img/picknplayicon.png">
+								<span>Pick'n'Play, by Pikeo.com</span>
+							</a>
+							<small class="counter">4</small>
 						</li>
 					</ul>
 		    </div>

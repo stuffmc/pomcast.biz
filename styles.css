@@ -14,3 +14,4 @@ a.screenshot img { width: 95px; }
 a.appstore img { margin-left:80px; }
 img.screenshot { margin:5px 25px; width:270px; }
 a.pop.screenshot img { margin: 3px; }
+.counter { margin-right: 25px !important; display:block; position:relative; bottom:17px; }
