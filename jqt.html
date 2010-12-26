@@ -22,15 +22,6 @@
             });
 
             $(function(){
-										//               $('a').click(function(e) {
-										//                   // if (confirm('This link opens in a new window.')) {
-										// console.log('clicked baby! '+$(e));
-										//                       // return true;
-										//                   // } else {
-										//                       $(this).removeClass('active');
-										//                       return false;
-										//                   // }
-										//               });
 							$.getJSON('projects.json', function(data) {
 								// console.log(data);
 						    $.each(data, function(index,value){
@@ -53,17 +44,16 @@
 
 									var last = item.find('.screenshot');
 									for(i=1; i <= value[5]; i++) {
-										// console.log(i);
+										var item = last.clone();
+										item.attr("href", "#"+value[0]+i);
+										item.find("img").attr("src", "img/"+value[0]+i+".png");
+										item.insertBefore("#radiopodcast .info");
+
 										var lastScreenshot = $('#screenshot1');
 										itemScreenshot = lastScreenshot.clone();
 										itemScreenshot.attr("id", value[0]+i);
 										itemScreenshot.find("img").attr("src", "img/"+value[0]+i+".png");
 										itemScreenshot.insertBefore("#projects")
-										item = last.clone();
-										item.attr("href", "#"+value[0]+i);
-										item.find("img").attr("src", "img/"+value[0]+i+".png");
-										// screenshot.appendTo(value[0]);
-										item.insertBefore("#radiopodcast .info");
 									}
 									last.remove();
 									// item.find('.screenshot').remove();
@@ -71,7 +61,7 @@
 								$('#projects ul li:first').remove();
 								$('#jqt div:last-child').remove();
 						  });
-							// jQT.goTo("#projects");
+							jQT.goTo("#projects");
             });
         </script>
     </head>
