@@ -1,5 +1,6 @@
 body 		{ background:#1b242b; margin:0px; font: small-caps bold 14pt "Lucida Grande", Lucida, Verdana, sans-serif;}
 #projects img 		{ height:40px; }
+.impressum { font-size: 10px; }
 span 		{ margin-left:5px; display:inline-table; padding-top:15px; padding-bottom:10px; }
 iframe 		{ border-style: none; overflow:hidden; }
 #jqt ul li 	{ padding: 0px 0px 0px 10px; }    

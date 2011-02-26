@@ -3,19 +3,15 @@
     <head>
         <meta charset="UTF-8" />
         
-        <title>Pomcast.biz - iOS & Ruby</title>
-        <!-- <style type="text/css" media="screen">@import "https://github.com/senchalabs/jQTouch/raw/master/jqtouch/jqtouch.css";</style>
-        <style type="text/css" media="screen">@import "https://github.com/senchalabs/jQTouch/raw/master/themes/default/theme.css";</style>
-				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
-        <script src="https://github.com/senchalabs/jQTouch/raw/master/jqtouch/jqtouch.js" type="application/x-javascript" charset="utf-8"></script> -->
+        <title>Pomcast.biz :: Cocoa Dev & Courses + Ruby & HTML5 Dev</title>
 				<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-				<style type="text/css" media="screen">@import "../jQTouch/jqtouch/jqtouch.css";</style>
-        <style type="text/css" media="screen">@import "../jQTouch/themes/default/theme.css";</style>
+				<style type="text/css" media="screen">@import "jQTouch/jqtouch/jqtouch.css";</style>
+        <style type="text/css" media="screen">@import "jQTouch/themes/default/theme.css";</style>
 				<link href="styles.css" type="text/css" rel="stylesheet" />
 				<link rel="stylesheet" media="all and (min-device-width: 481px)" href="desktop.css" /><!-- device- -->
 				<link rel="stylesheet" media="all and (max-device-width: 480px)" href="iphone.css" /><!-- device- -->
 				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
-        <script src="../jQTouch/jqtouch/jqtouch.js" type="application/x-javascript" charset="utf-8"></script>
+        <script src="jQTouch/jqtouch/jqtouch.js" type="application/x-javascript" charset="utf-8"></script>
         <script type="text/javascript" charset="utf-8">
             var jQT = new $.jQTouch({
                 statusBar: 'black'
@@ -30,7 +26,7 @@
 									item.find('small').html(value[5]);
 									var a = $(item).children();
 									a.attr("href", "#"+value[0]);
-									a.find("img").attr("src", "img/"+value[0]+"icon.png")
+									a.find("img").attr("src", "img/"+value[0]+"icon.png");
 									a.find("span").html(value[1]);
 									item.appendTo('#projects ul:first');
 									var last = $('#jqt > div:last');
@@ -38,7 +34,7 @@
 									item.attr("id", value[0]);
 									item.find('h1').html(value[1]);
 									item.find('span').html(value[3]);
-									item.find("div.detail img").attr("src", "img/"+value[0]+"icon.png")
+									item.find("div.detail img").attr("src", "img/"+value[0]+"icon.png");
 									item.find('p.info').html(value[2]);
 									// console.log(value[0]+value[5]);
 									item.insertBefore(last);
@@ -55,14 +51,14 @@
 										itemScreenshot = lastScreenshot.clone();
 										itemScreenshot.attr("id", value[0]+imageNumber);
 										itemScreenshot.find("img").attr("src", "img/"+value[0]+imageNumber+".png");
-										itemScreenshot.insertBefore("#projects")
+										itemScreenshot.insertBefore("#projects");
 									}
 									last.remove();
 						    });
 								$('#projects ul li:first').remove();
 								$('#jqt div:last-child').remove();
 						  });
-							jQT.goTo("#projects");
+							jQT.goTo("#impressum");
             });
 			
 						function log(text) {
@@ -78,15 +74,29 @@
 				  <div class="toolbar">
 				      <h1>Pomcast.biz</h1>
 				  </div>
-					<div>if there's an [iOS project] out there, Yes we can...<br><br>We worked for <a href="http://pomcast.com/2008/12/08/pickplay/">Orange</a>, <a rel="external" href="http://mobya.com/instantpay">Mobya</a>, <a href="http://lagardere.com">Lagard&egrave;re</a>, <a target="_blank" href="http://regioneo.com">Regioneo</a>, <a target="_blank" href="http://sevensnap.com">SevenSnap</a>, ...<br /></div>
+					<div>Want to learn iOS Development?<br />More info <a href="http://ios.pomcast.biz">here</a> about our offer.<p class="impressum">&nbsp;</p>We worked for <a href="http://pomcast.com/2008/12/08/pickplay/" target="_blank">Orange</a>, <a href="http://mobya.com/instantpay" target="_blank">Mobya</a>, <a href="http://lagardere.com" target="_blank">Lagard&egrave;re</a>, <a target="_blank" href="http://regioneo.com">Regioneo</a>, <a target="_blank" href="http://sevensnap.com">SevenSnap</a>, ...<br /></div>
 					<ul class="rounded">
-						<li class="arrow"><a rel="external" href="http://pomcast.biz/">Check our HD reel video!</a></li>
+						<li class="arrow"><a href="http://pomcast.biz/work.mov" target="_blank">Reel HD Video</a></li>
+						<li class="arrow"><a href="http://pomcast.biz/mobile.mov" target="_blank">Reel Mobile Video</a></li>
 						<li class="arrow"><a href="#projects">iPhone Projects</a></li>
 					</ul>
-					We also do Ruby on Rails, check out <a href="http://radiopodcast.com">RadioPodcast</a>, we did *all* :)<br><br>
+					We also do Ruby on Rails, check out <a href="http://radiopodcast.com" target="_blank">RadioPodcast</a>, we did *all* :)<br><br>
 					Get in touch with us by emailing 
 					<a href="mailto:info@pomcast-REMOVE-THIS.biz"><img src="img/infoat.png" border="0"></a><br>
 					Oh, btw, we also speak german, french, and spanish. Ja! Oui ! ¡Si!
+						<a class="impressum" href="#impressum"><br>Impressum</a>
+				</div>
+				<div id="impressum" align="center">
+				  <div class="toolbar">
+				      <h1>Impressum</h1>
+				      <a class="back" href="#">Home</a>
+				  </div><p class="impressum">&nbsp;</p>
+					<p>Manuel CARRASCO MOLINA</p>
+					<p>Golzheimer Weg 14<br />
+					50171 Kerpen</p><br>
+					<p>E-Mail: mc [aet] stuffmc.com</p><br>
+					<p>Inhaltlich Verantwortliche gemäß TMG und § 55 Abs. 2 RStV: Manuel CARRASCO MOLINA (Anschrift wie oben)</p><br>
+					<p>Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
 				</div>
 				<div id="projects">
 				  <div class="toolbar">
