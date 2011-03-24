@@ -5,6 +5,8 @@ span 		{ margin-left:5px; display:inline-table; padding-top:15px; padding-bottom
 iframe 		{ border-style: none; overflow:hidden; }
 #jqt ul li 	{ padding: 0px 0px 0px 10px; }    
 a 			{ color: yellow; }
+#da			{ position: absolute; }
+#da a		{ text-decoration:none; }
 #phone { display:none }
 #main { text-align:center; }
 div.detail { margin-bottom:15px; }
